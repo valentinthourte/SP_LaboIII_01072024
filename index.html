@@ -38,7 +38,7 @@
 
         <h1 class="center">Administrador de monedas</h1>
     
-        <div class="formulario flex center">
+        <div class="formulario container flex center">
             <form action="" method="POST" id="formCryptos" class="center">
                 <input type="text" class="hidden" name="id" id="id">
                 <input type="text" class="hidden" name="fechaCreacion" id="fechaCreacion">
@@ -95,17 +95,17 @@
     <div id="tabla" class="container-table table table-responsive center">
         <button class="btn bg-danger right" id="botonBorrarTodo">Borrar todo</button>
 
-        <div class="container">
-            <div class="row mt-3">
-                <div class="col-md-6">
+        <div class="container justify-content-between">
+            <div class="row mt-3 generic">
+                <div class="col-md-6 generic">
                     <label class="form-label fw-bold">Filtrar algoritmo</label>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 generic">
                     <label class="form-label fw-bold">Promedio</label>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-md-6">
+                <div class="col-md-6 generic">
                     <select name="filtroAlgoritmo" id="filtroAlgoritmo">
                         <option value="noFilter"></option>
                         <option value="SHA-256">SHA-256</option>
@@ -116,7 +116,7 @@
                         <option value="x11">X11</option>
                     </select>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 generic">
                     <input type="text" name="textoPromedio" id="textoPromedio" readonly value="N/A">
                 </div>
             </div>

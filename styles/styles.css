@@ -15,6 +15,10 @@ header {
     display: flex;
 }
 
+#tabla .container .generic {
+    background-color: rgb(227,192,199);
+  }
+
 .center {
     justify-content: center;
     align-items: center;
