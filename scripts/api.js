@@ -90,7 +90,7 @@ export function eliminarUno(id) {
     xhr.addEventListener("readystatechange", function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          const data = JSON.parse(xhr.responseText);
+          const data = xhr.responseText;
           resolve(data);
         } else {
           reject(new Error("ERR " + xhr.status + ": " + xhr.statusText));

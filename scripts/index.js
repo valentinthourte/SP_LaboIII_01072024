@@ -57,8 +57,9 @@ function eventListeners() {
                     break;
                 case "crear":
                 default:
+                    const crypto = await crearUnCrypto(model);
+                    model.id = crypto.id;
                     items.push(model);
-                    await crearUnCrypto(model);
                     break;
             }
             limpiarFormulario();
